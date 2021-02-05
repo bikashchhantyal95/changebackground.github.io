@@ -15,14 +15,14 @@ const hexVal = [
   "D",
   "E",
   "F",
-];
+];//Hex numbers
 const btn = document.getElementById("btn"); //get id of btn
-const color = document.querySelector(".color");
-btn.addEventListener("click", function () {
+const color = document.querySelector(".color");//select using class
+btn.addEventListener("click", function () {//adding event listener to btn class
   let hexColorCode = "#";
   for (let i = 0; i < 6; i++) {
     hexColorCode += hexVal[getRandomHexCode()]; //generate random hexcolor code
-    console.log(hexColorCode);
+    // console.log(hexColorCode);
   }
   document.body.style.backgroundColor = hexColorCode;
   color.textContent = hexColorCode;
